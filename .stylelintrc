@@ -1,0 +1,21 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
+    "rules": {
+        "declaration-block-trailing-semicolon": "always",
+        "color-hex-case": "lower",
+        "color-hex-length": "long",
+        "selector-type-case": "lower",
+        "no-missing-end-of-source-newline": true,
+        "number-leading-zero": "always",
+        "string-quotes": "single",
+        "block-no-empty": true,
+        "at-rule-semicolon-space-before": "never",
+        "declaration-colon-space-after": "always-single-line",
+        "selector-combinator-space-after": "always",
+        "indentation": 2,
+        "selector-pseudo-element-colon-notation": "single",
+        "at-rule-empty-line-before": "never",
+        "rule-empty-line-before": "never"
+    }
+}

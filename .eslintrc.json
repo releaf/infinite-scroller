@@ -1,0 +1,83 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^(_|unused-)"
+      }
+    ],
+    // This is annoying. We should let developers choose whether or not to use SFCs
+    "react/prefer-stateless-function": [
+      "off"
+    ],
+    "no-else-return": [
+      "off"
+    ],
+    "max-len": [
+      "error",
+      150,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false
+      }
+    ],
+    "no-underscore-dangle": [
+      "off"
+    ],
+    "global-require": [
+      "off"
+    ],
+    "react/jsx-no-bind": [
+      "off"
+    ],
+    "import/no-unresolved": [2, {
+        "caseSensitive": false
+      }
+    ],
+    "import/prefer-default-export": false,
+    "object-curly-spacing": [1, "always"]
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  }
+}
